@@ -18,6 +18,59 @@ public class ScreeningTool{
 				//st.StartScreening();
 				break;
 			case 2:
+
+				System.out.println("\033[1mWhat is COVID‑19?\n"+
+						"COVID‑19\033[0m \033[3mis the new respiratory disease spreading around the world and it is caused by the \033[1mcoronavirus.\033[0m\033[0m"+
+						"COVID‑19 is short for \033[1m\"coronavirus disease 2019\".\033[0m\n"+
+						"\n\033[3mThe virus is thought to spread mainly between people who are in close contact with one another (about 6 feet)"+
+						" and through respiratory droplets produced when an infected person coughs or sneezes.\n"+
+						"\nPeople are most contagious when they are the sickest. "+
+						"But those who don’t have a lot of symptoms can still pass the virus on to others.\n"+
+						"There is currently no vaccine or cure for COVID‑19 but researchers are working to find one.\033[0m\n"+
+						"\n\033[1mWhat are COVID‑19’s symptoms?\033[0m\n"+
+						"The most common symptoms are very similar to other viruses: fever, cough, and difficulty breathing.\n"+
+						"\nCommon symptoms of \033[1mCOVID‑19\033[0m are changing as more is learned about the disease. "+
+						"For the most up to date symptom list, visit the government’s website.\n"+
+						"\nSymptoms may appear \033[1m2 to 14 days\033[0m after exposure and range from mild to severe illness.\n"+
+						"If you or someone you know has symptoms, this Screening Tool will recommend the next steps.\n"+
+						"\n\033[1mWho is at high risk for COVID‑19?\033[0m\n"+
+						"Everyone is at risk of getting \033[1mCOVID‑19\033[0m, but some people are at a higher risk of serious illness.\n"+
+						"\nGenerally speaking, adults aged 65 and older and people of any age who have "+
+						"underlying medical conditions may be at higher risk for serious illness from \033[1mCOVID‑19\033[0m.\n"+
+						"\nThe most up-to-date way to assess your risk is to complete our Screening Tool.\n"+
+						"\n\033[1mWhat about COVID‑19, pregnancy, and newborns?\033[0m\n"+
+                                                "At this time, pregnant women reportedly have the same \033[1mCOVID‑19\033[0m risk as adults who are not pregnant. "+
+                       			        "\nThere is also no clear evidence that a fetus can be infected with COVID‑19 in the womb.\n"+
+                       			        "\nPregnant women are known to have a higher risk of severe illness when infected with viruses from the same family as COVID‑19 "+
+                        			"and other viral respiratory infections.\n This is why pregnant women should take extra precautions to not get COVID‑19. "+
+                        			"Avoid those who have or who have been exposed to COVID‑19. Wash your hands often. Practice physical distancing. "+
+                        			"\nClean and disinfect frequently touched surfaces daily\n"+
+                        			"\nDuring this time, it’s normal for care providers to change some prenatal visits to telemedicine.\n"+
+                        			"Ask if your delivering hospital has changed any rules, like if you’ll be asked to wear a face covering "+
+                        			"while giving birth or if there is a new visitor policy.\n"+
+						"Most babies born to people with \033[1mCOVID‑19\033[0m are not affected. \nHowever, once the baby is born, it is at risk for infection. "+
+                        			"New parents should take the same precautions to protect themselves from illness as pregnant women.\n"+
+                        			"So far, \033[1mCOVID‑19\033[0m has not been detected in breast milk.\nIf you are sick, including with COVID‑19, wear a cloth face "+
+                        			"covering and wash your hands before each feeding.\nIf pumping milk, do not share your pump with anyone else. "+
+                        			"\nWash your hands before expressing milk or before touching the pump or bottle parts."+
+                        			"\nFollow recommendations for cleaning the pump and parts after each use.\nIf possible, have someone who is not sick feed the baby.\n"+
+                        			"Stay in touch with your care team if you feel sick or develop COVID‑19 symptoms.\n"+
+                        			"Pregnancy and postpartum can be stressful, and \033[1mCOVID‑19\033[0m can add to feelings of uncertainty, stress, anxiety, or depression.\n"+
+                        			"Talk with your care provider if you are feeling overwhelmed. Seek help if you "+
+                        			"are in crisis and feel like you may harm yourself or your baby.\n"+
+                        			"\n\033[1mWhen should I see a doctor?\033[0m\n"+
+                        			"Knowing when to see a doctor can keep medical care available for those who need it most.\n"+
+                        			"Most mild symptoms can be treated at home. The most up-to-date way to assess your best next steps is to complete our Screening Tool.\n"+
+                        			"If you need to see your doctor, call the office before you go. Many physicians’ offices are offering virtual visits.\n"+
+                        			"They will tell you what to do based on your location.\n"+
+                        			"Testing is limited-availability across the country and is currently being prioritized for \033[1mhealthcare workers,\n"+
+                        			"emergency medical service providers,\npolice,\nand other essential workers\033[0m, so please consult your doctor "+
+                        			"for availability in your local area.\n"+
+                        			"If you develop emergency warning signs, call emergency services.\n\033[1mEmergency warning signs include:\033[0m"+
+                        			"severe, constant chest pain or pressure\nextreme difficulty breathing\nsevere, constant lightheadedness\n"+
+                        			"or serious disorientation or unresponsiveness.\n\n");
+				System.out.println("In case you feel that something is not right, enter 1 to start screening. Enter any other keyword to end.");
+
 				break;
 			case 3:
 
@@ -26,12 +79,14 @@ public class ScreeningTool{
 			default:
 				System.out.println("Invalid Input\nTo be redirected to the beggining, \033[1mpress 1\033[0m.");
 				b=ab.nextInt();
-				if(b==1)
+				if(b==1){
+					System.out.println("\033[1m\n\n______________________________________________\n\n\033[0m");
 					main(null);
+				}
 				else{
 					System.out.println("\033[1mThank You for using this tool\033[0m");
+					System.out.println("\033[1m\n\n______________________________________________\n\n\033[0m");
 				}
-				System.out.println("\033[1m\n\n______________________________________________\n\n\033[0m");
 
 				break;
 		}
