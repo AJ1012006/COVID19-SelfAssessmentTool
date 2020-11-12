@@ -18,6 +18,7 @@ If you don't have git installed on your machine and don't want to install it eit
 
 <img src="https://user-images.githubusercontent.com/66965323/98013812-da964500-1e20-11eb-8266-46ffbb3f15d7.png" alt="Please reload the page. :(">
 
-2>Open the directory or the folder where you cloned the repository using a **Text Editor** or an **IDE** of your choice.
+2>Open the cloned repository using the **Terminal**, **Text Editor** or an **IDE** of your choice.
 
-3>Run the program.  _**:)**_
+3>Run the program. If you use an editor such as Notepad, Emacs or Vim or you want to run this program directly from the terminal, make sure the path of Java JDK is set in your environment variable. Then, in the
+terminal, type **javac ScreeningTool.java** and then run the program by typing **java ScreeningTool**. _**:)**_
