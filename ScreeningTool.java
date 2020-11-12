@@ -70,6 +70,14 @@ public class ScreeningTool{
                         			"severe, constant chest pain or pressure\nextreme difficulty breathing\nsevere, constant lightheadedness\n"+
                         			"or serious disorientation or unresponsiveness.\n\n");
 				System.out.println("In case you feel that something is not right, enter 1 to start screening. Enter any other keyword to end.");
+				b=ab.nextInt();
+
+				if(b==1){
+
+					//st.StartScreening();
+				}
+
+				else
 
 				break;
 			case 3:
@@ -90,5 +98,23 @@ public class ScreeningTool{
 
 				break;
 		}
+	}
+
+	public static void HelplineNumbers(){
+
+		System.out.println("\033[1mCentral Helpline Number for Covid-19:-+91-11-23978046\n");
+
+		System.out.println("\nList of the helpline numbers of State in alphabetical order:\nAndhra Pradesh\033[0m-0866-2410978\n\033[1mArunachal Pradesh\033[0m-9436055743\n"+
+				"\033[1mAssam\033[0m-6913347770\n\033[1mBihar\033[0m-104\n\033[1mChhattisgarh\033[0m-104\n\033[1mGoa\033[0m-104\n\033[1mGujarat\033[0m-104\n"+
+				"\033[1mHaryana\033[0m-8558893911\n\033[1m\033[0mHimachal Pradesh-104\n\033[1mJharkhand\033[0m-104\n\033[1mKarnataka\033[0m-104\n\033[1mKerala\033[0m-04712552056\n"+
+				"\033[1mMadhya Pradesh\033[0m-104\n\033[1mMaharashtra\033[0m-02026127394\n\033[1mManipur\033[0m-3852411668\n\033[1mMeghalaya\033[0m-108\n\033[1mMizoram\033[0m-102\n"+
+				"\033[1mNagaland\033[0m-7005539653\n\033[1mOdisha\033[0m-9439994859\n\033[1mPunjab\033[0m-104\n\033[1mRajasthan\033[0m-01412225624\n\033[1mSikkim\033[0m-104\n"+
+				"\033[1mTamil Nadu\033[0m-04429510500\n\033[1mTelangana\033[0m-104\n\033[1mTripura\033[0m-03812315879\n\033[1mUttarakhand\033[0m-104\n"+
+				"\033[1mUttar Pradesh\033[0m-18001805145\n\033[1mWest Bengal\033[0m-03323412600\n\n");
+
+		System.out.println("\033[1mList of the helpline numbers of Union Territories:\nAndaman and Nicobar Islands\033[0m-03192232102\n\033[1mChandigarh\033[0m-9779558282"+
+				"\n\033[1mDadra and Nagar Haveli\033[0m-104\n\033[1mDaman and Diu\033[0m-104\n\033[1mDelhi\033[0m-01122307145\n\033[1mJammu and Kashmir\033[0m-01912520982"+
+				"\n\033[1mLadakh\033[0m-01982256462\n\033[1mLakshadweep\033[0m-104\n\033[1mPuducherry\033[0m-104");
+
 	}
 }
