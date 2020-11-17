@@ -1,5 +1,9 @@
 import java.util.Scanner;
 public class ScreeningTool{
+
+	int a;
+	Scanner ab=new Scanner(System.in);
+
 	public static void main(String[] args){
 		ScreeningTool st=new ScreeningTool();
 
@@ -15,7 +19,7 @@ public class ScreeningTool{
 		switch(b){
 			case 1:
 
-				//st.StartScreening();
+				st.StartScreening();
 				break;
 			case 2:
 
@@ -74,18 +78,20 @@ public class ScreeningTool{
 
 				if(b==1){
 
-					//st.StartScreening();
+					st.StartScreening();
 				}
 
-				else
+				else{
+					System.out.println("Thank You for using this tool.");
+				}
 
 				break;
 			case 3:
 
-				//HelplineNumbers();
+				HelplineNumbers();
 				break;
 			default:
-				System.out.println("Invalid Input\nTo be redirected to the beggining, \033[1mpress 1\033[0m.");
+				System.out.println("Invalid Input\nTo be redirected to the beggining, \033[1mpress 1\033[0m. Enter anything else to exit.");
 				b=ab.nextInt();
 				if(b==1){
 					System.out.println("\033[1m\n\n______________________________________________\n\n\033[0m");
@@ -103,7 +109,6 @@ public class ScreeningTool{
 	public static void HelplineNumbers(){
 
 		System.out.println("\033[1mCentral Helpline Number for Covid-19:-+91-11-23978046\n");
-
 		System.out.println("\nList of the helpline numbers of State in alphabetical order:\nAndhra Pradesh\033[0m-0866-2410978\n\033[1mArunachal Pradesh\033[0m-9436055743\n"+
 				"\033[1mAssam\033[0m-6913347770\n\033[1mBihar\033[0m-104\n\033[1mChhattisgarh\033[0m-104\n\033[1mGoa\033[0m-104\n\033[1mGujarat\033[0m-104\n"+
 				"\033[1mHaryana\033[0m-8558893911\n\033[1m\033[0mHimachal Pradesh-104\n\033[1mJharkhand\033[0m-104\n\033[1mKarnataka\033[0m-104\n\033[1mKerala\033[0m-04712552056\n"+
@@ -111,10 +116,97 @@ public class ScreeningTool{
 				"\033[1mNagaland\033[0m-7005539653\n\033[1mOdisha\033[0m-9439994859\n\033[1mPunjab\033[0m-104\n\033[1mRajasthan\033[0m-01412225624\n\033[1mSikkim\033[0m-104\n"+
 				"\033[1mTamil Nadu\033[0m-04429510500\n\033[1mTelangana\033[0m-104\n\033[1mTripura\033[0m-03812315879\n\033[1mUttarakhand\033[0m-104\n"+
 				"\033[1mUttar Pradesh\033[0m-18001805145\n\033[1mWest Bengal\033[0m-03323412600\n\n");
-
 		System.out.println("\033[1mList of the helpline numbers of Union Territories:\nAndaman and Nicobar Islands\033[0m-03192232102\n\033[1mChandigarh\033[0m-9779558282"+
 				"\n\033[1mDadra and Nagar Haveli\033[0m-104\n\033[1mDaman and Diu\033[0m-104\n\033[1mDelhi\033[0m-01122307145\n\033[1mJammu and Kashmir\033[0m-01912520982"+
 				"\n\033[1mLadakh\033[0m-01982256462\n\033[1mLakshadweep\033[0m-104\n\033[1mPuducherry\033[0m-104");
 
+	}
+
+	void StartScreening(){
+
+		System.out.println("\033[1mCOVID-19 SCREENING TOOL\033[0m\n"+
+				"\nYou have to answer a few questions about symptoms, travel and contact you have had with others.\n"+
+				"You can use this tool for yourself or anyone else who won't be able to use this tool for any reason.\n\n");
+		System.out.println("\033[1mIs there an emergency?\033[0m\n\n\033[3mAre you experiencing:\033[0m\n-Severe, constant chest pain or pressure."+
+				"\n-Extreme difficulty in breathing\n-Severe, constant lightheadedness\n-Serious disorientation or unresponsiveness\n");
+		System.out.println("1>I am experiencing at least one of these.\n2>I am not experiencing any of these.");
+
+		a=ab.nextInt();
+		if(a==1){
+			
+			Affected();
+		}
+
+		else if(a==2){
+			System.out.println("Have you recently started experiencing any of the following symptoms:\n\n"+
+					"1>Fever or chills\n2>New or worsening cough\n3>Tiredness\n4>More than one of the above\n5>None of the above");
+
+			a=ab.nextInt();
+
+			if(a==5){
+
+				System.out.println("Are you experiencing any of the following symptoms:\n\n"+
+						"1>Sore throat\n2>Sustained loss of smell, taste or appetite\n3>Mild or moderate difficulty in breathing"+
+						"\n4>Aching throughout the body\n5>Vomiting or diarrhoea\n6>Rashes on skin or discolouration of finger or toes"+
+						"\n7>Conjunctivitis\n8>More than one of the above\n9>None of the above");
+				a=ab.nextInt();
+
+				if(a==9){
+					System.out.println("It seems that you aren't affected by \033[1mCOVID-19\033[0m because you don't have any symptoms.\n"+
+							"If you aren't aware, then please know that \"symptoms\" can take anywhere from 2 to 14 days to show up.\n"+
+							"In a few cases, there are no \"symptoms\" visible at all even though the person is diagnosed with \033[1mCOVID-19\033[0m.\n\n"+
+							"If you think you are fit and fine and don't need to take the test further, press any thing apart from 1, 2 and 3 to exit.\n"+
+							"Press 1 if you suspect you are affected by the virus and want to screen further.\n"+
+							"Press 2 to start screening again."+
+							"Press 3 to start this tool from the very beginning.");
+					a=ab.nextInt();
+
+					if(a==1){
+						//TestFurther();
+					}
+					else if(a==2){
+						StartScreening();
+					}
+					else if(a==3){
+						main(null);
+					}
+					else{
+						System.out.println("\n\n______________________________________________\n\n");
+					}
+				}
+			}
+		}
+
+		else{
+			System.out.println("Invalid Input. Redirecting you to the beginning.");
+			System.out.println("\n\n______________________________________________\n\n");
+
+			StartScreening();
+		}
+	}
+
+	//void TestFurther(){
+	//}
+
+	void Affected(){
+		System.out.println("\n\n\n\033[1mISOLATE YOURSELF FROM OTHERS\n\n\n\n");
+		System.out.println("1>Avoid contact with others except to get medical care\033[0m\n\n"+
+				"If you can, have a separate room and bathroom.\n"+
+				"You should avoid public transportation and ride sharing.\n\n");
+		System.out.println("\033[1m	WHEN TO END ISOLATION\033[0m\n\n"+
+				"You should stay away from others for at least 14 days from when symptoms first appeared.\n"+
+				"Isolating yourself can be hard when you’re not feeling well, but it will protect those around you.\n\n\n");
+		System.out.println("\033[1m2>WATCH FOR SIGNS\033[0m"+
+				"Call the helpline numbers if you develop any emergency warning signs such as:\n"+
+				"\033[1msevere, constant chest pain or pressure\nextreme difficulty breathing\nsevere, constant lightheadedness\n"+
+				"serious disorientation or unresponsiveness\nblue-tinted face or lips.\033[0m\n\n\n");
+		System.out.println("\033[1m3>WEAR A MASK AROUND OTHERS\033[0m\n\n"+
+				"You should wear a mask or cloth covering over your nose and mouth if you are around other people in home or outside of the home.\n\n\n");
+		System.out.println("\033[1m4>WASH HANDS FREQUENTLY\033[0m\n\n"+
+				"Wash hands with soap and water for at least 20 seconds.\n"+
+				"You should avoid touching your eyes, nose, and mouth with unwashed hands.\n"+
+				"If soap and water are not available, use hand sanitizer that contains at least 70% alcohol.\n\n\n");
+		System.out.println("\033[1m5>REST AND TAKE CARE\033[0m\n\n"+
+				"You should eat well, drink fluids, and get plenty of rest.");
 	}
 }
