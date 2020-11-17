@@ -1,5 +1,5 @@
-# COVID-19 Screening Tool
-_This is a simple Screening Tool for detecting **COVID-19**, by asking the user questions about symptoms, contact with others who were or are **COVID-19** positive, asking them to disclose whether they travelled in the last few weeks or not and further instructing them about what their next steps should be if they are or are not affected._
+# COVID-19 Self Assessment Tool
+_This is a simple Self Assessment Tool for detecting **COVID-19**, by asking the user questions about symptoms, contact with others who were or are **COVID-19** positive, asking them to disclose whether they travelled in the last few weeks or not and further instructing them about what their next steps should be if they are or are not affected._
 ###### This program has been made in Java.
 
 ### This project is licensed under the terms of the MIT license.
