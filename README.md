@@ -9,10 +9,10 @@ You can use this program either on **Gitpod** or on your **Local Machine**.
 
 To use it on **Gitpod**, add the prefix '**gitpod.io/#**' to the url in the search box ignoring the single quotation mark.
 
-To use it on your **Local Machine**, follow the given steps:
+To use it on your **Local Machine**, make sure you have [Java](https://www.oracle.com/in/java/technologies/javase-downloads.html) installed and follow the given steps:
 
 1>If you've git installed on your machine, clone the repository using the git clone command in any terminal of your choice.
->To know more about installing git on Windows, macOs or Linux, <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git/" target="_blank">click here </a>. 
+>To know more about installing git on Windows, macOs or Linux, <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git/" target="_main">click here </a>. 
 
 If you don't have git installed on your machine and don't want to install it either, then you can get this repository by downloading the ZIP file and extracting it in any existing directory or by creating a new one.
 
