@@ -73,7 +73,7 @@ public class ScreeningTool{
                         			"If you develop emergency warning signs, call emergency services.\n\033[1mEmergency warning signs include:\033[0m"+
                         			"severe, constant chest pain or pressure\nextreme difficulty breathing\nsevere, constant lightheadedness\n"+
                         			"or serious disorientation or unresponsiveness.\n\n");
-				System.out.println("In case you feel that something is not right, enter 1 to start screening. Enter any other keyword to end.");
+				System.out.println("In case you feel that something is not right, enter 1 to start screening. Enter any other keyword to end.\n\n");
 				b=ab.nextInt();
 
 				if(b==1){
@@ -174,6 +174,13 @@ public class ScreeningTool{
 						System.out.println("\n\n______________________________________________\n\n");
 					}
 				}
+			}
+			else if(a==1||a==2||a==3||a==4){
+
+				TestFurther();
+			}
+			else{
+				System.out.println("Thank You for using this Screening Tool");
 			}
 		}
 
