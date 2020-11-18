@@ -7,10 +7,10 @@ public class ScreeningTool{
 	public static void main(String[] args){
 		ScreeningTool st=new ScreeningTool();
 
-		System.out.println("\033[1mThis is a Covid-19 Screening and Tackling tool.\033[0m\n"+
+		System.out.println("\033[1mThis is a Covid-19 Self Assessment and Tackling tool.\033[0m\n"+
 				"\033[3mThis tool can help you understand what to do next about Covid-19.\033[0m\n"+
 				"\nPlease enter the serial number following the tool you want to access.\n");
-		System.out.println("\n\033[1m 1>Start Screening\n"+
+		System.out.println("\n\033[1m 1>Start Self Assessment\n"+
 	                	" 2>About COVID-19\n" +
                                 " 3>Helpline Numbers for different States and Union Territories\n\033[0m");
 		Scanner ab=new Scanner(System.in);
@@ -73,7 +73,7 @@ public class ScreeningTool{
                         			"If you develop emergency warning signs, call emergency services.\n\033[1mEmergency warning signs include:\033[0m"+
                         			"severe, constant chest pain or pressure\nextreme difficulty breathing\nsevere, constant lightheadedness\n"+
                         			"or serious disorientation or unresponsiveness.\n\n");
-				System.out.println("In case you feel that something is not right, enter 1 to start screening. Enter any other keyword to end.\n\n");
+				System.out.println("In case you feel that something is not right, enter 1 to start the Self Assessment. Enter any other keyword to end.\n\n");
 				b=ab.nextInt();
 
 				if(b==1){
@@ -124,7 +124,7 @@ public class ScreeningTool{
 
 	void StartScreening(){
 
-		System.out.println("\033[1mCOVID-19 SCREENING TOOL\033[0m\n"+
+		System.out.println("\033[1mCOVID-19 SELF ASSESSMENT TOOL\033[0m\n"+
 				"\nYou have to answer a few questions about symptoms, travel and contact you have had with others.\n"+
 				"You can use this tool for yourself or anyone else who won't be able to use this tool for any reason.\n\n");
 		System.out.println("\033[1mIs there an emergency?\033[0m\n\n\033[3mAre you experiencing:\033[0m\n-Severe, constant chest pain or pressure."+
@@ -180,7 +180,7 @@ public class ScreeningTool{
 				TestFurther();
 			}
 			else{
-				System.out.println("Thank You for using this Screening Tool");
+				System.out.println("Thank You for using this Self Assessment Tool");
 			}
 		}
 
