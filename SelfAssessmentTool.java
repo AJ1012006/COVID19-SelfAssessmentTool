@@ -192,8 +192,29 @@ public class ScreeningTool{
 		}
 	}
 
-	//void TestFurther(){
-	//}
+	void TestFurther(){
+		
+		System.out.println("\033[1mAre you diagonised/suffering from any of these:\033[0m\n1>Moderate to severe asthama or chronic lung diseases."+
+				"2>HIV or inherited immune deficiency\n3>Cancers or medicine causing immune deficiency\n4>Diabetes with complication\n"+
+				"5>Serious heart conditions, such as heart failure or prior heart attacks\n6>Extreme obesity\n7>Cirrhosis of the liver\n"+
+				"8>Kidney failure that needs dialysis\n9>Pregnancy\n10>More than one of the above\n11>None of the above");
+		a=ab.nextInt();
+
+		if(a==11){
+			//Travel();
+		}
+		else if(a==1||a==2||a==3||a==4||a==5||a==6||a==7||a==8||a==9||a==10){
+
+			System.out.println("You have a higher risk of getting COVID-19.\n\n");
+			//Travel();
+		}
+		else{
+			System.out.println("Invalid Input. Redirecting you to the beginning.");
+			System.out.println("\n\n______________________________________________\n\n");
+
+			StartScreening();
+		}
+	}
 
 	void Affected(){
 		System.out.println("\n\n\n\033[1mISOLATE YOURSELF FROM OTHERS\n\n\n\n");
