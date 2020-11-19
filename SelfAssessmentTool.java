@@ -162,7 +162,7 @@ public class ScreeningTool{
 					a=ab.nextInt();
 
 					if(a==1){
-						//TestFurther();
+						TestFurther();
 					}
 					else if(a==2){
 						StartScreening();
@@ -201,12 +201,12 @@ public class ScreeningTool{
 		a=ab.nextInt();
 
 		if(a==11){
-			//Travel();
+			Travel();
 		}
 		else if(a==1||a==2||a==3||a==4||a==5||a==6||a==7||a==8||a==9||a==10){
 
 			System.out.println("You have a higher risk of getting COVID-19.\n\n");
-			//Travel();
+			Travel();
 		}
 		else{
 			System.out.println("Invalid Input. Redirecting you to the beginning.");
@@ -214,6 +214,26 @@ public class ScreeningTool{
 
 			StartScreening();
 		}
+	}
+
+	void Travel(){
+		System.out.println("\033[1mHave you travelled domestically or internationally in the past 14 days?\033[0m\n"+
+				"\n1>I have travelled somewhere recently\n2>I have not travelled anywhere recently");
+		a=ab.nextInt();
+
+		if(a==1){
+			Travelled();
+		}
+		else if(a==2){
+
+			//NotTravelled();
+		}
+	}
+
+	void Travelled(){
+		System.out.println("Please enter the name of the place where you have travelled:");
+		String z=ab.nextInt();
+		System.out.println("There are a large number of COVID-19 cases in"+z+". You should avoid unnecessary visits outside.");
 	}
 
 	void Affected(){
