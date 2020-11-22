@@ -1,11 +1,11 @@
 import java.util.Scanner;
-public class ScreeningTool{
+public class SelfAssessmentTool{
 
 	int a;
 	Scanner ab=new Scanner(System.in);
 
 	public static void main(String[] args){
-		ScreeningTool st=new ScreeningTool();
+		SelfAssessmentTool st=new SelfAssessmentTool();
 
 		System.out.println("\033[1mThis is a Covid-19 Self Assessment and Tackling tool.\033[0m\n"+
 				"\033[3mThis tool can help you understand what to do next about Covid-19.\033[0m\n"+
@@ -232,7 +232,7 @@ public class ScreeningTool{
 
 	void Travelled(){
 		System.out.println("Please enter the name of the place where you have travelled:");
-		String z=ab.nextInt();
+		String z=ab.next();
 		System.out.println("There are a large number of COVID-19 cases in"+z+". You should avoid unnecessary visits outside.");
 	}
 
