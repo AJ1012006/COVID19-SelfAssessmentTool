@@ -108,7 +108,7 @@ public class SelfAssessmentTool{
 
 	public static void HelplineNumbers(){
 
-		System.out.println("\033[1mCentral Helpline Number for Covid-19:-+91-11-23978046\n");
+		System.out.println("\n\n\033[1mCentral Helpline Number for Covid-19:-+91-11-23978046\n");
 		System.out.println("\nList of the helpline numbers of State in alphabetical order:\nAndhra Pradesh\033[0m-0866-2410978\n\033[1mArunachal Pradesh\033[0m-9436055743\n"+
 				"\033[1mAssam\033[0m-6913347770\n\033[1mBihar\033[0m-104\n\033[1mChhattisgarh\033[0m-104\n\033[1mGoa\033[0m-104\n\033[1mGujarat\033[0m-104\n"+
 				"\033[1mHaryana\033[0m-8558893911\n\033[1m\033[0mHimachal Pradesh-104\n\033[1mJharkhand\033[0m-104\n\033[1mKarnataka\033[0m-104\n\033[1mKerala\033[0m-04712552056\n"+
@@ -124,7 +124,7 @@ public class SelfAssessmentTool{
 
 	void StartScreening(){
 
-		System.out.println("\033[1mCOVID-19 SELF ASSESSMENT TOOL\033[0m\n"+
+		System.out.println("\n\n\033[1mCOVID-19 SELF ASSESSMENT TOOL\033[0m\n"+
 				"\nYou have to answer a few questions about symptoms, travel and contact you have had with others.\n"+
 				"You can use this tool for yourself or anyone else who won't be able to use this tool for any reason.\n\n");
 		System.out.println("\033[1mIs there an emergency?\033[0m\n\n\033[3mAre you experiencing:\033[0m\n-Severe, constant chest pain or pressure."+
@@ -138,26 +138,26 @@ public class SelfAssessmentTool{
 		}
 
 		else if(a==2){
-			System.out.println("Have you recently started experiencing any of the following symptoms:\n\n"+
+			System.out.println("\n\nHave you recently started experiencing any of the following symptoms:\n\n"+
 					"1>Fever or chills\n2>New or worsening cough\n3>Tiredness\n4>More than one of the above\n5>None of the above");
 
 			a=ab.nextInt();
 
 			if(a==5){
 
-				System.out.println("Are you experiencing any of the following symptoms:\n\n"+
+				System.out.println("\n\nAre you experiencing any of the following symptoms:\n\n"+
 						"1>Sore throat\n2>Sustained loss of smell, taste or appetite\n3>Mild or moderate difficulty in breathing"+
 						"\n4>Aching throughout the body\n5>Vomiting or diarrhoea\n6>Rashes on skin or discolouration of finger or toes"+
 						"\n7>Conjunctivitis\n8>More than one of the above\n9>None of the above");
 				a=ab.nextInt();
 
 				if(a==9){
-					System.out.println("It seems that you aren't affected by \033[1mCOVID-19\033[0m because you don't have any symptoms.\n"+
+					System.out.println("\n\nIt seems that you aren't affected by \033[1mCOVID-19\033[0m because you don't have any symptoms.\n"+
 							"If you aren't aware, then please know that \"symptoms\" can take anywhere from 2 to 14 days to show up.\n"+
 							"In a few cases, there are no \"symptoms\" visible at all even though the person is diagnosed with \033[1mCOVID-19\033[0m.\n\n"+
 							"If you think you are fit and fine and don't need to take the test further, press any thing apart from 1, 2 and 3 to exit.\n"+
 							"Press 1 if you suspect you are affected by the virus and want to screen further.\n"+
-							"Press 2 to start screening again."+
+							"Press 2 to start screening again.\n"+
 							"Press 3 to start this tool from the very beginning.");
 					a=ab.nextInt();
 
@@ -174,18 +174,22 @@ public class SelfAssessmentTool{
 						System.out.println("\n\n______________________________________________\n\n");
 					}
 				}
+				else if(a==1||a==2||a==3||a==4||a==5||a==6||a==7||a==8){
+					
+					TestFurther();
+				}
 			}
 			else if(a==1||a==2||a==3||a==4){
 
 				TestFurther();
 			}
 			else{
-				System.out.println("Thank You for using this Self Assessment Tool");
+				System.out.println("\n\nThank You for using this Self Assessment Tool");
 			}
 		}
 
 		else{
-			System.out.println("Invalid Input. Redirecting you to the beginning.");
+			System.out.println("\n\nInvalid Input. Redirecting you to the beginning.");
 			System.out.println("\n\n______________________________________________\n\n");
 
 			StartScreening();
@@ -194,7 +198,7 @@ public class SelfAssessmentTool{
 
 	void TestFurther(){
 		
-		System.out.println("\033[1mAre you diagonised/suffering from any of these:\033[0m\n1>Moderate to severe asthama or chronic lung diseases."+
+		System.out.println("\n\n\033[1mAre you diagonised/suffering from any of these:\033[0m\n1>Moderate to severe asthama or chronic lung diseases."+
 				"2>HIV or inherited immune deficiency\n3>Cancers or medicine causing immune deficiency\n4>Diabetes with complication\n"+
 				"5>Serious heart conditions, such as heart failure or prior heart attacks\n6>Extreme obesity\n7>Cirrhosis of the liver\n"+
 				"8>Kidney failure that needs dialysis\n9>Pregnancy\n10>More than one of the above\n11>None of the above");
@@ -205,11 +209,11 @@ public class SelfAssessmentTool{
 		}
 		else if(a==1||a==2||a==3||a==4||a==5||a==6||a==7||a==8||a==9||a==10){
 
-			System.out.println("You have a higher risk of getting COVID-19.\n\n");
+			System.out.println("\n\nYou have a higher risk of getting COVID-19.\n\n");
 			Travel();
 		}
 		else{
-			System.out.println("Invalid Input. Redirecting you to the beginning.");
+			System.out.println("\n\nInvalid Input. Redirecting you to the beginning.");
 			System.out.println("\n\n______________________________________________\n\n");
 
 			TestFurther();
@@ -218,7 +222,7 @@ public class SelfAssessmentTool{
 	}
 
 	void Travel(){
-		System.out.println("\033[1mHave you travelled domestically or internationally in the past 14 days?\033[0m\n"+
+		System.out.println("\n\n\033[1mHave you travelled domestically or internationally in the past 14 days?\033[0m\n"+
 				"\n1>I have travelled somewhere recently\n2>I have not travelled anywhere recently");
 		a=ab.nextInt();
 
@@ -230,35 +234,42 @@ public class SelfAssessmentTool{
 			NotTravelled();
 		}
 		else{
-			System.out.println("Thank you for using this Tool.");
+			System.out.println("\n\nInvalid Input. Redirecting you to the beginning.");
+			System.out.println("\n\n______________________________________________\n\n");
+
+			Travel();
+			//Redirects the user to the beginning.
 		}
 	}
 
 	void Travelled(){
 		System.out.println("Please enter the name of the place where you have travelled:");
 		String z=ab.next();
-		System.out.println("There are a large number of COVID-19 cases in"+z+". You should avoid unnecessary visits outside.");
+		System.out.println("\n\nThere are a large number of COVID-19 cases in "+z+". You should avoid unnecessary visits outside.");
 
 		NotTravelled();
 	}
 
 	void NotTravelled(){
-		System.out.println("\033[1mIn the last 14 days, what is your exposure to others who are known to have COVID-19?\033[0m"+
+		System.out.println("\n\n\033[1mIn the last 14 days, what is your exposure to others who are known to have COVID-19?\033[0m"+
 				"\n\n\033[1m1>\033[0mI live with someone who has COVID-19\n\033[1m2>\033[0mI have lived with someone who has COVID-19\n"+
 				"\033[1m3\033[0m>I have had close contact with someone who has COVID-19\n\033[1m4>\033[0mI have been near someone who has COVID-19"+
 				"\n\033[1m5>\033[0mI have had no exposure\n\033[1m6\033[0m>I do not know");
 		a=ab.nextInt();
 
-		if(a==1||a==2||a==3||a==4)
-		{
+		if(a==1||a==2||a==3||a==4){
+
 			Affected();
 		}
 		else if(a==5){
+
 			Safe();
 		}
 		else if(a==6){
+
 			Hospital();
 		}
+
 		else{
 			System.out.println("Invalid Input. Redirecting you to the beginning.");
 			System.out.println("\n\n______________________________________________\n\n");
@@ -287,6 +298,16 @@ public class SelfAssessmentTool{
 				"If soap and water are not available, use hand sanitizer that contains at least 70% alcohol.\n\n\n");
 		System.out.println("\033[1m5>REST AND TAKE CARE\033[0m\n\n"+
 				"You should eat well, drink fluids, and get plenty of rest.");
+		System.out.println("To view the list of Helpline numbers of different States and Union Territories, enter 1. Enter anything else to exit.");
+		
+		a=ab.nextInt();
+
+		if(a==1){
+			HelplineNumbers();
+		}
+		else{
+			System.out.println("Thank You for using this Tool.");
+		}
 	}
 
 	void Safe(){
@@ -306,5 +327,38 @@ public class SelfAssessmentTool{
 		System.out.println("\033[1mWatch for symptoms\033[0m\n\n"+
 				"Watch for \033[1mCOVID-19\033[0m symptoms such as fever, cough and difficulty in breathing.\n"+
 				"If any symptoms show up, refer to this or any other tool like this.\n\n");
+	}
+
+	void Hospital(){
+		System.out.println("\033[1mDo you work in a medical facility or did you visit one lately\033[0m\n\n"+
+				"1>I have worked in or visited a hospital or other facility in the past 14 days\n"+
+				"2>I did not work in or visit a medical facility in the past 14 days");
+		a=ab.nextInt();
+		
+		if(a==1){
+			System.out.println("\033[1mWhile working in or visiting a medical facility, did you come in close contact with someone who has COVID-19?\033[0m"+
+					"\n\n1>Yes\n2>No");
+			a=ab.nextInt();
+
+			if(a==1){
+				Affected();
+			}
+			else if(a==2){
+				Safe();
+			}
+			else{
+				System.out.println("Invalid Input. Redirecting you to the beginning.");
+				System.out.println("\n\n______________________________________________\n\n");
+
+			}
+		}
+		else if(a==2){
+
+			Safe();
+		}
+		else{
+			System.out.println("Invalid Input. Redirecting you to the beginning.");
+			System.out.println("\n\n______________________________________________\n\n");
+		}
 	}
 }
