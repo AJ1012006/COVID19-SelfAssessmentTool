@@ -212,7 +212,8 @@ public class SelfAssessmentTool{
 			System.out.println("Invalid Input. Redirecting you to the beginning.");
 			System.out.println("\n\n______________________________________________\n\n");
 
-			StartScreening();
+			TestFurther();
+			//Redirects the user to the beginning.
 		}
 	}
 
@@ -226,7 +227,10 @@ public class SelfAssessmentTool{
 		}
 		else if(a==2){
 
-			//NotTravelled();
+			NotTravelled();
+		}
+		else{
+			System.out.println("Thank you for using this Tool.");
 		}
 	}
 
@@ -234,6 +238,33 @@ public class SelfAssessmentTool{
 		System.out.println("Please enter the name of the place where you have travelled:");
 		String z=ab.next();
 		System.out.println("There are a large number of COVID-19 cases in"+z+". You should avoid unnecessary visits outside.");
+
+		NotTravelled();
+	}
+
+	void NotTravelled(){
+		System.out.println("\033[1mIn the last 14 days, what is your exposure to others who are known to have COVID-19?\033[0m"+
+				"\n\n\033[1m1>\033[0mI live with someone who has COVID-19\n\033[1m2>\033[0mI have lived with someone who has COVID-19\n"+
+				"\033[1m3\033[0m>I have had close contact with someone who has COVID-19\n\033[1m4>\033[0mI have been near someone who has COVID-19"+
+				"\n\033[1m5>\033[0mI have had no exposure\n\033[1m6\033[0m>I do not know");
+		a=ab.nextInt();
+
+		if(a==1||a==2||a==3||a==4)
+		{
+			Affected();
+		}
+		else if(a==5){
+			Safe();
+		}
+		else if(a==6){
+			Hospital();
+		}
+		else{
+			System.out.println("Invalid Input. Redirecting you to the beginning.");
+			System.out.println("\n\n______________________________________________\n\n");
+
+			NotTravelled();
+		}
 	}
 
 	void Affected(){
@@ -256,5 +287,24 @@ public class SelfAssessmentTool{
 				"If soap and water are not available, use hand sanitizer that contains at least 70% alcohol.\n\n\n");
 		System.out.println("\033[1m5>REST AND TAKE CARE\033[0m\n\n"+
 				"You should eat well, drink fluids, and get plenty of rest.");
+	}
+
+	void Safe(){
+		System.out.println("\n\n\n\033[1mContinue Physical Distancing\033[0m\nYou should wear a mask and stay six feet away from anyone you don’t live with.\n\n\n");
+		System.out.println("\033[1m1>Stay six feet from others\033[0m\n\n"+
+				"You should avoid crowds of people and social gatherings. You should also stay six feet six feet apart from anyone you don't live with.\n"+
+				"You should especially avoid anyone who's showing symptoms.\n\n"+
+				"Physical distancing can also help you avoid catching COVID-19 from someone who isn't showing any symptoms.\n\n\n");
+		System.out.println("\033[1m2>Wear a mask around others\n\n"+
+				"You should wear a mask or cloth covering over your nose and mouth when leaving home or meeting anyone who's not part of the household.\n\n\n");
+		System.out.println("\033[1m3>Wash hands frequently\033[0m\n\n"+
+				"Wash hands with soap and water for at least \033[1m20 seconds\033[0m.\n\n"+
+				"You should avoid touching your eyes, nose and mouth with unwashed hands.\n\n"+
+				"If soap and water are not available, use hand sanitizer that contains atleaast \033[1m70% alcohol\033[0m\n\n\n");
+		System.out.println("\033[1m4>Take care of yourself\033[0m\n\n"+
+				"You should eat well, exercise regularly, and get plenty of sleep.\n\n\n");
+		System.out.println("\033[1mWatch for symptoms\033[0m\n\n"+
+				"Watch for \033[1mCOVID-19\033[0m symptoms such as fever, cough and difficulty in breathing.\n"+
+				"If any symptoms show up, refer to this or any other tool like this.\n\n");
 	}
 }
