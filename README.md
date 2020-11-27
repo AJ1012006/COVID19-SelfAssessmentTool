@@ -21,4 +21,4 @@ If you don't have git installed on your machine and don't want to install it eit
 2>Open the cloned repository using the **Terminal**, **Text Editor** or an **IDE** of your choice.
 
 3>Run the program. If you use an editor such as Notepad, Emacs or Vim or you want to run this program directly from the terminal, make sure the path of Java JDK is set in your environment variable. Then, in the
-terminal, type **javac ScreeningTool.java** and then run the program by typing **java ScreeningTool**.	**:)**
+terminal, type **javac SelfAssessmentTool.java** and then run the program by typing **java SelfAssessmentTool**.	**:)**
