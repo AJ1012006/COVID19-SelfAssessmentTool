@@ -330,7 +330,7 @@ public class SelfAssessmentTool{
 	}
 
 	void Hospital(){
-		System.out.println("\033[1mDo you work in a medical facility or did you visit one lately\033[0m\n\n"+
+		System.out.println("\033\n\n[1mDo you work in a medical facility or did you visit one lately\033[0m\n\n"+
 				"1>I have worked in or visited a hospital or other facility in the past 14 days\n"+
 				"2>I did not work in or visit a medical facility in the past 14 days");
 		a=ab.nextInt();
