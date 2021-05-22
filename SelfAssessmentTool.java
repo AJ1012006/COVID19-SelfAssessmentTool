@@ -12,7 +12,7 @@ public class SelfAssessmentTool{
 				"\nPlease enter the serial number following the tool you want to access.\n");
 		System.out.println("\n\033[1m 1>Start Self Assessment\n"+
 	                	" 2>About COVID-19\n" +
-                                " 3>Helpline Numbers for different States and Union Territories\n\033[0m");
+                        " 3>Helpline Numbers for different States and Union Territories\n\033[0m");
 		Scanner ab=new Scanner(System.in);
 		int b=ab.nextInt();
 
@@ -43,36 +43,36 @@ public class SelfAssessmentTool{
 						"underlying medical conditions may be at higher risk for serious illness from \033[1mCOVID‑19\033[0m.\n"+
 						"\nThe most up-to-date way to assess your risk is to complete our Screening Tool.\n"+
 						"\n\033[1mWhat about COVID‑19, pregnancy, and newborns?\033[0m\n"+
-                                                "At this time, pregnant women reportedly have the same \033[1mCOVID‑19\033[0m risk as adults who are not pregnant. "+
-                       			        "\nThere is also no clear evidence that a fetus can be infected with COVID‑19 in the womb.\n"+
-                       			        "\nPregnant women are known to have a higher risk of severe illness when infected with viruses from the same family as COVID‑19 "+
-                        			"and other viral respiratory infections.\n This is why pregnant women should take extra precautions to not get COVID‑19. "+
-                        			"Avoid those who have or who have been exposed to COVID‑19. Wash your hands often. Practice physical distancing. "+
-                        			"\nClean and disinfect frequently touched surfaces daily\n"+
-                        			"\nDuring this time, it’s normal for care providers to change some prenatal visits to telemedicine.\n"+
-                        			"Ask if your delivering hospital has changed any rules, like if you’ll be asked to wear a face covering "+
-                        			"while giving birth or if there is a new visitor policy.\n"+
+						"At this time, pregnant women reportedly have the same \033[1mCOVID‑19\033[0m risk as adults who are not pregnant. "+
+						"\nThere is also no clear evidence that a fetus can be infected with COVID‑19 in the womb.\n"+
+						"\nPregnant women are known to have a higher risk of severe illness when infected with viruses from the same family as COVID‑19 "+
+						"and other viral respiratory infections.\n This is why pregnant women should take extra precautions to not get COVID‑19. "+
+						"Avoid those who have or who have been exposed to COVID‑19. Wash your hands often. Practice physical distancing. "+
+						"\nClean and disinfect frequently touched surfaces daily\n"+
+						"\nDuring this time, it’s normal for care providers to change some prenatal visits to telemedicine.\n"+
+						"Ask if your delivering hospital has changed any rules, like if you’ll be asked to wear a face covering "+
+                        "while giving birth or if there is a new visitor policy.\n"+
 						"Most babies born to people with \033[1mCOVID‑19\033[0m are not affected. \nHowever, once the baby is born, it is at risk for infection. "+
-                        			"New parents should take the same precautions to protect themselves from illness as pregnant women.\n"+
-                        			"So far, \033[1mCOVID‑19\033[0m has not been detected in breast milk.\nIf you are sick, including with COVID‑19, wear a cloth face "+
-                        			"covering and wash your hands before each feeding.\nIf pumping milk, do not share your pump with anyone else. "+
-                        			"\nWash your hands before expressing milk or before touching the pump or bottle parts."+
-                        			"\nFollow recommendations for cleaning the pump and parts after each use.\nIf possible, have someone who is not sick feed the baby.\n"+
-                        			"Stay in touch with your care team if you feel sick or develop COVID‑19 symptoms.\n"+
-                        			"Pregnancy and postpartum can be stressful, and \033[1mCOVID‑19\033[0m can add to feelings of uncertainty, stress, anxiety, or depression.\n"+
-                        			"Talk with your care provider if you are feeling overwhelmed. Seek help if you "+
-                        			"are in crisis and feel like you may harm yourself or your baby.\n"+
-                        			"\n\033[1mWhen should I see a doctor?\033[0m\n"+
-                        			"Knowing when to see a doctor can keep medical care available for those who need it most.\n"+
-                        			"Most mild symptoms can be treated at home. The most up-to-date way to assess your best next steps is to complete our Screening Tool.\n"+
-                        			"If you need to see your doctor, call the office before you go. Many physicians’ offices are offering virtual visits.\n"+
-                        			"They will tell you what to do based on your location.\n"+
-                        			"Testing is limited-availability across the country and is currently being prioritized for \033[1mhealthcare workers,\n"+
-                        			"emergency medical service providers,\npolice,\nand other essential workers\033[0m, so please consult your doctor "+
-                        			"for availability in your local area.\n"+
-                        			"If you develop emergency warning signs, call emergency services.\n\033[1mEmergency warning signs include:\033[0m"+
-                        			"severe, constant chest pain or pressure\nextreme difficulty breathing\nsevere, constant lightheadedness\n"+
-                        			"or serious disorientation or unresponsiveness.\n\n");
+                        "New parents should take the same precautions to protect themselves from illness as pregnant women.\n"+
+                        "So far, \033[1mCOVID‑19\033[0m has not been detected in breast milk.\nIf you are sick, including with COVID‑19, wear a cloth face "+
+                        "covering and wash your hands before each feeding.\nIf pumping milk, do not share your pump with anyone else. "+
+                        "\nWash your hands before expressing milk or before touching the pump or bottle parts."+
+                        "\nFollow recommendations for cleaning the pump and parts after each use.\nIf possible, have someone who is not sick feed the baby.\n"+
+                        "Stay in touch with your care team if you feel sick or develop COVID‑19 symptoms.\n"+
+                        "Pregnancy and postpartum can be stressful, and \033[1mCOVID‑19\033[0m can add to feelings of uncertainty, stress, anxiety, or depression.\n"+
+                        "Talk with your care provider if you are feeling overwhelmed. Seek help if you "+
+                        "are in crisis and feel like you may harm yourself or your baby.\n"+
+                        "\n\033[1mWhen should I see a doctor?\033[0m\n"+
+                        "Knowing when to see a doctor can keep medical care available for those who need it most.\n"+
+                        "Most mild symptoms can be treated at home. The most up-to-date way to assess your best next steps is to complete our Screening Tool.\n"+
+                        "If you need to see your doctor, call the office before you go. Many physicians’ offices are offering virtual visits.\n"+
+                        "They will tell you what to do based on your location.\n"+
+                        "Testing is limited-availability across the country and is currently being prioritized for \033[1mhealthcare workers,\n"+
+                        "emergency medical service providers,\npolice,\nand other essential workers\033[0m, so please consult your doctor "+
+                        "for availability in your local area.\n"+
+                        "If you develop emergency warning signs, call emergency services.\n\033[1mEmergency warning signs include:\033[0m"+
+                        "severe, constant chest pain or pressure\nextreme difficulty breathing\nsevere, constant lightheadedness\n"+
+                        "or serious disorientation or unresponsiveness.\n\n");
 				System.out.println("In case you feel that something is not right, enter 1 to start the Self Assessment. Enter any other keyword to end.\n\n");
 				b=ab.nextInt();
 
@@ -349,6 +349,7 @@ public class SelfAssessmentTool{
 			else{
 				System.out.println("Invalid Input. Redirecting you to the beginning.");
 				System.out.println("\n\n______________________________________________\n\n");
+				Hospital();
 
 			}
 		}
@@ -359,6 +360,7 @@ public class SelfAssessmentTool{
 		else{
 			System.out.println("Invalid Input. Redirecting you to the beginning.");
 			System.out.println("\n\n______________________________________________\n\n");
+			Hospital();
 		}
 	}
 }
